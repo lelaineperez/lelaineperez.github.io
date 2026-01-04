@@ -41,32 +41,24 @@ nav {
 
 /* HERO / HOME */
 .hero-container {
+  display: grid;
+  grid-template-columns: 1fr 250px; /* text + image */
+  align-items: center;
+  gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
 
-.hero-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap; /* mobile-friendly */
-}
-
-.hero-text {
-  flex: 1 1 400px;
-}
-
 .hero-text h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 .hero-text h2 {
   font-size: 1.5rem;
   color: #555;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .tagline {
@@ -98,62 +90,22 @@ nav {
   color: #fff;
 }
 
-.hero-image {
-  flex: 0 0 200px;
-  text-align: center;
-}
-
-.profile-photo {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+.hero-image img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 2px solid #ccc;
+  object-fit: cover;
 }
 
-/* SECTIONS */
-section {
-  padding: 64px 32px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h2 {
-  margin-bottom: 16px;
-  color: #333;
-}
-
-/* PROJECTS */
-.project {
-  margin-bottom: 24px;
-  padding: 16px;
-  border-left: 4px solid #ff6600; /* accent color */
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
-}
-
-/* BUTTONS */
-button {
-  padding: 8px 16px;
-  background-color: #ff6600;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #e65500;
-}
-
-/* MOBILE HERO ADJUSTMENTS */
+/* Mobile adjustments */
 @media (max-width: 700px) {
-  .hero-inner {
-    flex-direction: column;
+  .hero-container {
+    grid-template-columns: 1fr; /* stack on mobile */
     text-align: center;
   }
-  .hero-image {
-    margin-top: 2rem;
+  .hero-image img {
+    margin: 1rem auto 0 auto;
   }
 }
 
