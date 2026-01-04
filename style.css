@@ -22,7 +22,7 @@ nav {
 
 .nav-links {
   display: flex;
-  justify-content: flex-start; /* left-align links on desktop */
+  justify-content: center; /* center links on desktop */
   align-items: center;
   flex-wrap: wrap;             /* allow wrap if needed on smaller screens */
   gap: 16px;                   /* spacing between links */
