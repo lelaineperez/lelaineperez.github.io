@@ -91,6 +91,88 @@ button:hover {
   background-color: #e65500;
 }
 
+.hero-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap; /* mobile-friendly */
+}
+
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.mini-value {
+  margin-bottom: 1.5rem;
+  color: #444;
+  font-size: 1rem;
+}
+
+.hero-links .button-link {
+  display: inline-block;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.hero-links .button-link:hover {
+  background: #333;
+  color: #fff;
+}
+
+.hero-image {
+  flex: 0 0 200px;
+  text-align: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+}
+
 /* RESPONSIVE */
 @media (max-width: 600px) {
   .nav-links {
