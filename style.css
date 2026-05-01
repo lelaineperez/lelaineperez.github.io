@@ -224,11 +224,11 @@ h2 {
 
 .project-gif {
   display: block;
-  width: 100%;
-  max-width: 700px;
-  height: auto;
-  margin: 20px auto;
-  border-radius: 8px;
+  width: 100%;        /* lets it shrink on mobile */
+  max-width: 500px;   /* caps size on desktop */
+  height: auto;       /* keeps proportions */
+  margin: 20px auto;  /* centers it */
+  border-radius: 10px;
 }
 
 .project-link {
