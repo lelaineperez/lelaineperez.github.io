@@ -222,12 +222,16 @@ h2 {
   box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
 }
 
-.project-gif {
-  display: block;
-  width: 100%;        /* lets it shrink on mobile */
-  max-width: 500px;   /* caps size on desktop */
-  height: auto;       /* keeps proportions */
-  margin: 20px auto;  /* centers it */
+.gif-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.gif-container img {
+  width: 100%;
+  max-width: 450px; 
+  height: auto;
   border-radius: 10px;
 }
 
