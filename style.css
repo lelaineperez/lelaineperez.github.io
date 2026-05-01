@@ -203,12 +203,42 @@ h2 {
 }
 
 /* ================= PROJECTS ================= */
+.projects-container {
+  padding: 64px 32px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.projects-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 .project {
   margin-bottom: 24px;
-  padding: 16px;
+  padding: 24px;
   border-left: 4px solid #6d57b3;
   background-color: #fff;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+}
+
+.project-gif {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.project-link {
+  text-align: center !important;
+  margin-bottom: 1rem;
+}
+
+.project-link a {
+  color: #6d57b3;
+  font-weight: bold;
 }
 
 /* ================= BUTTONS ================= */
