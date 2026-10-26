@@ -230,8 +230,8 @@ h2 {
 
 .gif-container img {
   width: 100%;
-  max-width: 450px; 
-  height: auto;
+  max-width: 600px; 
+  height: 500;
   border-radius: 10px;
 }
 
