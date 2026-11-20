@@ -117,7 +117,7 @@ nav {
   align-items: center;
 }
 
-.portrait-photo {
+/* .portrait-photo {
   display: block;
   width: 100%;
   max-width: 380px;
@@ -125,7 +125,7 @@ nav {
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 18px 18px 0 #E9DDF5;
-}
+} */
 
 /* MOBILE */
 
