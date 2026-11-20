@@ -130,6 +130,17 @@ body > section:first-of-type {
   color: #fff;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .js .milestone-content {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+
+  .timeline-dot {
+    transition: none;
+  }
+}
 /* =================================
    KEY MILESTONES
 ================================= */
